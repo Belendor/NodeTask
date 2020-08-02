@@ -29,4 +29,13 @@ Gaunams acces accessToken kuri reikia prikabinti i request headeri norint pasiek
   3.1. Priklausomai nuo uzklausos gaunamas rezultatas ar viskas ivykdyta sekmingai ar ivyko klaida.
   
   
- 4.
+ 4. GET -> https://apinodetask.herokuapp.com/show?page=1&limit=20 + Bearer tokenas (accessToken) gautas prisijungus.
+ 
+  - tiesiog /show parodo visus irasus.
+  - page koki puslpai norima ziureti.
+  - limi  po kiek irasu atvaizduoti puslapyje.
+  - taip pat grazina ar yra pries ir po psulapiai.
+  
+  5. GET -> https://apinodetask.herokuapp.com/logs + Bearer tokenas (accessToken) gautas prisijungus.
+  
+  Atvaizduoja visus api prisijungimus, koks end point buvo pasiektas, kada ir koks vartotojas (jei buvo prisijunges).
