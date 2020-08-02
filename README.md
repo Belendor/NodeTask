@@ -16,7 +16,7 @@
   "password": "slaptazodis"
 }
 ```
-Gaunams acces accessToken kuri reikia prikabinti i request headeri norint pasiekti vartotoju resurus.
+Gaunams acces accessToken kuri reikia prikabinti i request headeri norint pasiekti vartotoju resursus.
 
 
 3. POST -> https://apinodetask.herokuapp.com/add + Bearer tokenas (accessToken) gautas prisijungus.
