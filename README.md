@@ -26,7 +26,7 @@ Gaunams acces accessToken kuri reikia prikabinti i request headeri norint pasiek
   "currency": "valiuta"
 }
 ```
-  3.1. Priklausomai nuo uzklausos gaunamas rezultatas ar viskas ivykdyta sekmingai ar ivyko klaida.
+  3.1. Priklausomai nuo uzklausos gaunamas rezultatas ar viskas ivykdyta sekmingai ir ar ivyko klaida.
   
   
  4. GET -> https://apinodetask.herokuapp.com/show?page=1&limit=20 + Bearer tokenas (accessToken) gautas prisijungus.
