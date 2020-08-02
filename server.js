@@ -4,14 +4,14 @@ const express = require('express')
 const app = express()
 app.use(express.json())
 
-// Database connection
+// Database connection 
 
 mongoose.connect(process.env.MONGO_URI, {
                 useNewUrlParser:    true,
                 useUnifiedTopology: true,})
 .then(()=> console.log("Connected to MongoDB")).catch((err)=>console.log(err))
 
-// Routes(unprotected)
+// Routes(unprotected)  
 
 const registrationRoute = require("./routes/registration.js")
 const loginRoute        = require("./routes/login.js")
