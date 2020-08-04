@@ -8,6 +8,7 @@ router.get('/logs', authenticateToken, logger, async (req, res)=>{
 
     const allLogs = await Logger.find({});
     let reveredLogs = []
+    
     for(let i = allLogs.length-1; i >= 0; i--){
         reveredLogs.push(allLogs[i]) 
     }

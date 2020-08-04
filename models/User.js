@@ -14,7 +14,6 @@ const userShema = new mongoose.Schema({
         type: Date,
         default: Date.now()
     }
-
 })
 
 const Users = mongoose.model("users", userShema)

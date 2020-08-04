@@ -41,4 +41,16 @@ router.get('/show', authenticateToken, logger, async (req, res)=>{
     }
 })
 
+router.get('/show/:id', authenticateToken, logger, async (req, res)=>{
+
+    const order = await Order.find({orderNr: req.params.id})
+
+    if(order){
+        res.json(order)
+    }else{
+        res.status(400).send(`there is no order with ID: ${req.params.id}`)
+    }
+
+})
+
 module.exports = router;

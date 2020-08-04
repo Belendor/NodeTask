@@ -20,11 +20,15 @@ app.use("/", loginRoute)
 
 // Routes(protected)
 
-const addOrder   = require("./routes/add.js")
-const showOrders = require("./routes/show.js")
-const logs       = require("./routes/logs.js")
+const addOrder    = require("./routes/add.js")
+const updateOrder = require("./routes/update.js")
+const deleteOrder = require("./routes/delete.js")
+const showOrders  = require("./routes/show.js")
+const logs        = require("./routes/logs.js")
 
 app.use("/", addOrder)
+app.use("/", deleteOrder)
+app.use("/", updateOrder)
 app.use("/", showOrders)
 app.use("/", logs)
 
