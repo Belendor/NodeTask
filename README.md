@@ -46,10 +46,11 @@ Gaunams acces accessToken kuri reikia prikabinti i request headeri norint pasiek
   - :id - norimo istrinti iraso ID.
   
   7. PUT -> https://apinodetask.herokuapp.com/update/:id + Bearer tokenas (accessToken) gautas prisijungus.
+
+   - :id - norimo istrinti iraso ID.
+
   
-    - :id - norimo istrinti iraso ID.
-    
-    ```
+```
 {
   "amount": nauja suma,
   "currency": "nauja valiuta"
