@@ -14,6 +14,9 @@ const orderShema = new mongoose.Schema({
         type: {},
         required: true
     },
+    orderNr: {
+        type: Number
+    },
     date: {
         type: Date,
         default: Date.now()
