@@ -20,7 +20,7 @@ router.post('/add', authenticateToken, logger, async (req, res)=>{ // adds new o
             if(err){
                console.log(err);
             }
-        }})
+        }}) 
         if(totalOrders == 1){
             return res.status(500).send("Error on server side. Please try again")
         }

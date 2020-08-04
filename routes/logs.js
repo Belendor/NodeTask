@@ -4,7 +4,7 @@ const Logger = require("../models/Logger")
 const logger = require("../middlweres/logger.js")
 const authenticateToken = require("../middlweres/authenticateToken.js")
 
-router.get('/logs', authenticateToken, logger, async (req, res)=>{ // adds new order.
+router.get('/logs', authenticateToken, logger, async (req, res)=>{ 
 
     const allLogs = await Logger.find({});
     let reveredLogs = []
@@ -12,9 +12,7 @@ router.get('/logs', authenticateToken, logger, async (req, res)=>{ // adds new o
         reveredLogs.push(allLogs[i]) 
     }
 
-
     res.status(200).send(reveredLogs)
-
 })
 
 module.exports = router;
